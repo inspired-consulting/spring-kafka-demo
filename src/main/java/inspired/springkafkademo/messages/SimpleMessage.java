@@ -1,6 +1,6 @@
-package inspired.springkafkademo;
+package inspired.springkafkademo.messages;
 
-public class SimpleMessage {
+public class SimpleMessage implements Message{
 
     private final String payload;
 
@@ -18,6 +18,6 @@ public class SimpleMessage {
 
     @Override
     public String toString() {
-        return payload;
+        return "SimpleMessage['" + payload + "]";
     }
 }
